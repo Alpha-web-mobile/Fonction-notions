@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+    
+    <style> 
+    form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #radius{
+    height: 30px;
+    width: 400px;
+    align-self: center;
+    border-radius: 20px;
+    }
+    #button{
+    width: 100px;
+    align-self: center;
+    border-radius: 20px;
+    }
+    h1{
+    
+    text-align: center;
+    color: rgb(255, 128, 0);
+    }
+    </style>
+</head>
+<body>
+    <h1>Calculate the area of circle</h1>
+    
+      <p  id="area"></p>
+    <!--SECTION FORM -->
+    <section> 
+    <form name="form">
+    <label for="radius">Put the radius here</label>
+    <input type="number" name="radius" id="radius" value=""  size="10"><br>
+    <input type="button" name="button" id="button" value="Calculate" size="10"  onclick="calculate(form)">
+    <!-- <button type="button" id="btn">Calculate</button> -->
+    </form>
+    </section>
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <script> 
+    function calculate(form){
+    let radius = document.form.radius.value;
+    let area = 3.1416 *  radius * radius;
+    document.getElementById('area').innerHTML = "The area of circle is " + area;
+    
+    
+    }
+    </script>
+</body>
+</html>

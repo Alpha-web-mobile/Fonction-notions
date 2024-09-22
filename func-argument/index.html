@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notions functions</title>
+    <style> 
+     .container{
+   border: 1px solid #000;
+   text-align: center;
+     }
+     button{
+     border-radius: 20px;
+     margin: 10px;
+     }
+     .name{
+     color: darkorange;
+     }
+    </style>
+</head>
+<body>
+
+<h1>Notions Functions</h1>
+<div class="container">
+<p>Function with argument </p>
+<p  id="paragraph"></p>
+<button  onclick="message()">Read the message</button>
+<script> 
+ function message(msg) {
+   msg = prompt('Please enter your name here!  ')
+   document.getElementById('paragraph').textContent = `Hello  ${msg} ! How are you to day!`
+ }
+</script>
+</div>
+</body>
+</html>
